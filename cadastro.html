@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro Mente-Conecta</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header>
+    <h1>Cadastro</h1>
+    <p>Faça seu cadastro para participar da Mente Conecta.</p>
+</header>
+
+<main>
+    <nav>
+    <a href="index.html">Início</a>
+    <a href="index.html#Atividades">Atividades</a>
+    <a href="cadastro.html">Cadastro</a>
+</nav>
+
+    <form>
+
+        <fieldset>
+            <legend>Dados pessoais</legend>
+
+            <label for="nome">Nome completo</label>
+            <input type="text" id="nome" name="nome" required>
+
+            <label for="cpf">Digite seu CPF</label>
+            <input 
+                type="text" 
+                id="cpf" 
+                name="cpf" 
+                placeholder="000.000.000-00"
+                pattern="[0-9]{3}\.[0-9]{3}\.[0-9]{3}-[0-9]{2}"
+                maxlength="14"
+                required>
+
+            <label for="email">Digite seu email</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="data">Data de nascimento</label>
+            <input type="date" id="data" name="data" required>
+
+        </fieldset>
+
+        <fieldset>
+            <legend>Contato e endereço</legend>
+
+            <label for="contato">Digite seu contato</label>
+            <input 
+                type="tel" 
+                id="contato" 
+                name="contato" 
+                placeholder="(00) 00000-0000"
+                pattern="\([0-9]{2}\) [0-9]{4,5}-[0-9]{4}"
+                maxlength="15"
+                required>
+
+            <label for="endereco">Digite seu endereço</label>
+            <input type="text" id="endereco" name="endereco" required>
+
+            <label for="cep">Digite seu CEP</label>
+            <input 
+                type="text" 
+                id="cep" 
+                name="cep" 
+                placeholder="00000-000"
+                pattern="[0-9]{5}-[0-9]{3}"
+                maxlength="9"
+                required>
+
+            <label for="cidade">Digite sua cidade</label>
+            <input type="text" id="cidade" name="cidade" required>
+
+            <label for="estado">Digite seu estado</label>
+            <input type="text" id="estado" name="estado" required>
+
+        </fieldset>
+
+        <fieldset>
+            <legend>Como deseja participar?</legend>
+
+            <input type="radio" id="voluntario" name="participacao" value="voluntario" required>
+            <label for="voluntario">Voluntário</label>
+
+            <input type="radio" id="doacao" name="participacao" value="doacao">
+            <label for="doacao">Doação</label>
+            <p>
+    <a href="cadastro.html">Quero contribuir com a Mente Conecta</a>
+</p>
+
+        </fieldset>
+
+        <button type="submit">Confirmar participação</button>
+
+    </form>
+
+</main>
+<footer>
+    Todos os Direitos Reservados.
+</footer>
+
+</body>
+</html>
+
