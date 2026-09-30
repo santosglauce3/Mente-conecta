@@ -1,0 +1,26 @@
+{
+  "name": "ong--mente-conecta-producao",
+  "version": "1.0.0",
+  "description": "O Mente Conecta é um projeto de site para uma ONG fictícia voltada ao apoio emocional, à convivência e ao desenvolvimento pessoal.",
+  "main": "storage.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "vite build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/santosglauce3/Mente-conecta.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/santosglauce3/Mente-conecta/issues"
+  },
+  "homepage": "https://github.com/santosglauce3/Mente-conecta#readme",
+  "devDependencies": {
+    "vite": "^8.3.1",
+    "vite-plugin-html-minifier-terser": "^3.8.0"
+  }
+}
